@@ -1,15 +1,12 @@
-# fly.toml app configuration file generated for delete-session-message on 2026-03-01T06:07:09+02:00
+# fly.toml app configuration file generated for raed-seeion-hacker on 2026-03-01T04:31:33Z
 #
 # See https://fly.io/docs/reference/configuration/ for information about how to use this file.
 #
 
-app = 'delete-session-message'
-primary_region = 'fra'
+app = 'raed-seeion-hacker'
+primary_region = 'cdg'
 
 [build]
-
-[processes]
-  app = 'python3 app.py'
 
 [http_service]
   internal_port = 8080
@@ -20,7 +17,7 @@ primary_region = 'fra'
   processes = ['app']
 
 [[vm]]
-  memory = '2gb'
+  memory = '1gb'
   cpu_kind = 'shared'
-  cpus = 2
+  cpus = 1
   memory_mb = 2048
